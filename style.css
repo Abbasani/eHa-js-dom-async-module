@@ -1,0 +1,24 @@
+        .todo-list li {
+            color: gray;
+            list-style: none;
+            padding: 8px 40px 8px 8px;
+            position: relative;
+            cursor: pointer;
+            border-bottom: 1px solid #eee;
+            transition: color 0.2s;
+        }
+        .todo-list li .tick {
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: green;
+        }
+        .todo-list li.completed {
+            color: green;
+        }
+        .todo-list li.completed .tick {
+            display: inline;
+        }
